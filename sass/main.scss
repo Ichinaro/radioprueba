@@ -1,0 +1,90 @@
+// Bootstrap
+@import "../bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.subtitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.website-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.featured-post {
+  min-height: 370px;
+}
+
+.featured-post-inner {
+  .featured-post-info {
+    background: rgba(33, 37, 41, 0.39);
+    color: #fff;
+    padding: 10px 35px;
+
+    h4 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .post-meta {
+      font-size: 12px;
+    }
+  }
+
+  &.featured-post-1 {
+    background-image: url("../img/4.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.featured-post-2 {
+    background-image: url("../img/6.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.post {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h4 {
+    font-size: 18px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: $primary;
+      margin-top: 10px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .post-meta {
+    font-size: 12px;
+  }
+}
